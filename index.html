@@ -6,6 +6,7 @@
 	</head>	
 	<body>
 		<header><h1>HTML5 For Web Designers</h1></header>
+		<section>
 		<article>
 			<h2>A brief history of Markup</h2>
 			<p>The first release of HTML was HTML2.0. After HTML 4.01 came XHTML 1 which was characterized by strict markup rules. XHTML 2 was released and was not going to be backward compatible and thus failed miserabley. There was a rebellion within W3C from those who felt that languages that were being formulated were theoretically pure but were unrelated to the needs of web designers. A proposal to enable HTML to support web application development was rejected and the rebels formed Web Hypertext Application Technology Working Group. They worked on Web Forms 2.0 and Web Apps 1.0. aiming to extend HTML. XHTML is dead but its syntax lives on. HTML5 has not been officially released but we can still use its features provided they are supported by the browsers. </p>
@@ -13,52 +14,59 @@
 
 		<article>
 			<h2>The Design of HTML5</h2>
-			<p>HTML5 is built on the following Design principles:</p>
+			<ul>
+			<li>HTML5 is built on the following Design principles:</li>
 			<ul>
 				<li>Support already existing content.</li>
 				<li>Do not reinvent the wheel</li>
 				<li>In case of conflict, consider users over authors over implementers over specifiers over theoretical purity.</li>
 
 			</ul>
-			<p>
+			<li>
 				HTML5 defines what browsers should do incase they encounter errors. This feature is not of particular interests to web designers if they are writing correct mark up.
-			<p>
-			<p>The DOCTYPE declaration in HTML5 is not required. This makes sense because browsers support features not versions.</p>
-			<p>The new syntax is very lean and unnecessary attributes in tags such as the type="text/css" are excluded.</p>
-			<p>There is no deprecation of elements. Rather elements are simply obsolete. The frame, frameset, and noframes are some of the deprecated elements.</p>
-			<p>The javascript APIs that browsers have been using independently will be documented by HTML5</p>
+			</li>
+			<li>The DOCTYPE declaration in HTML5 is not required. This makes sense because browsers support features not versions.</li>
+			<li>The new syntax is very lean and unnecessary attributes in tags such as the type="text/css" are excluded.</li>
+			<li>There is no deprecation of elements. Rather elements are simply obsolete. The frame, frameset, and noframes are some of the deprecated elements.</li>
+			<li>The javascript APIs that browsers have been using independently will be documented by HTML5</li>
+			</ul>
 
 		</article>
 
 		<article>
 			<h2>Rich Media</h2>
-			<p>HTML is making it possible to take advantage of media on the media without depending on external  technoligies.</p>
-			<p>Canvas makes content change according to user actions and this is serves to replace technologies such as Flash. It can be used to update rather than create content to make it unobtrusive.</p>
-			<p>Audio can now be inserted directly into pages with audio tag. Boolean attributes are either present or not and do not take values. Adding controls is done by simply adding the controls boolean attribute. Using the preload attribute(set to none, auto or metadata) one can specify whether to buffer the audio. There has been the problem of format support among browsers. This can be solved by providing different formats for the browsers to choose from.</p>
-			<p> Video feature works in more or less the same way as audio. One however needs to specify the dimensions of the video so that it does not fill the whole page. Same format compatibility problem faces the video element and thus needs special consideration of the supported formats. Having native support eliminates the problem of sandboxing media thus making it possible for them to play well with other technologies like css and js. Good thing with the video is that it is also stylable.</p>
+			<ul>
+			<li>HTML is making it possible to take advantage of media on the media without depending on external  technoligies.</li>
+			<li>Canvas makes content change according to user actions and this is serves to replace technologies such as Flash. It can be used to update rather than create content to make it unobtrusive.</li>
+			<li>Audio can now be inserted directly into pages with audio tag. Boolean attributes are either present or not and do not take values. Adding controls is done by simply adding the controls boolean attribute. Using the preload attribute(set to none, auto or metadata) one can specify whether to buffer the audio. There has been the problem of format support among browsers. This can be solved by providing different formats for the browsers to choose from.</li>
+			<li> Video feature works in more or less the same way as audio. One however needs to specify the dimensions of the video so that it does not fill the whole page. Same format compatibility problem faces the video element and thus needs special consideration of the supported formats. Having native support eliminates the problem of sandboxing media thus making it possible for them to play well with other technologies like css and js. Good thing with the video is that it is also stylable.</li>
+			</ul>
 		</article>
 
 		<article>
 			<h2>Webforms 2.0</h2>
-			<p>Placeholder is a new element that enables a field to have some input before the user interacts with and if they leave it blank. </p>
-			<p>Autofocus places the cursor at a specific point in the form on load. This can however be annoying to some users if the autofocussed field is not the one expected by the user.</p>
-			<p>The datalist element makes it possible for one to define a list of inputs for the user to choose from while still having the power to type the missing option.</p>
-			<p>Input types such as search and range make it possible for the browser to represent the elements in their own way.</p>
-			<p>HTML5 introduces date types that record data in the standard ISO format.</p>
-			<p>These elements have different supports within browsers and this has to be considered when using them. They also cannot be styled. As much as client-side validation is done it is also important to do it server-side.</p>
+			<ul>
+			<li>Placeholder is a new element that enables a field to have some input before the user interacts with and if they leave it blank. </li>
+			<li>Autofocus places the cursor at a specific point in the form on load. This can however be annoying to some users if the autofocussed field is not the one expected by the user.</li>
+			<li>The datalist element makes it possible for one to define a list of inputs for the user to choose from while still having the power to type the missing option.</li>
+			<li>Input types such as search and range make it possible for the browser to represent the elements in their own way.</li>
+			<li>HTML5 introduces date types that record data in the standard ISO format.</li>
+			<li>These elements have different supports within browsers and this has to be considered when using them. They also cannot be styled. As much as client-side validation is done it is also important to do it server-side.</li>
+			</ul>
 
 
 		</article>
 
 		<article>
 			<h2>Semantics</h2>
-			<p>HTML makes it possible for designers to create custom behaviours for elements using classes.</p>
-			<p>Microformats use this to cover some of the wholes in HTML. But these are community concensus on what names to use but ther exists no browser support for these.They also do not cover all scenarios but instead use the 80-20 rule.</p>
-			<p>There is therefore a need for accommodating more functionality as required. RDFa does this by using namespaces to allow an infinite variety of formats. These namespaces however introduced an extra complexity layer. Another negative is also that this tends to diverge implementations instead of converging them. </p>
-			<p>The <mark>mark</mark> element's purpose is to highlight text while not attaching any importance to it e.g in search</p>
-			<p>The time element is for representing times, dates or a combination. Specify the datetime attribute inside the tag or expose it to the user.</p>
+			<ul>
+			<li>HTML makes it possible for designers to create custom behaviours for elements using classes.</li>
+			<li>Microformats use this to cover some of the wholes in HTML. But these are community concensus on what names to use but ther exists no browser support for these.They also do not cover all scenarios but instead use the 80-20 rule.</li>
+			<li>There is therefore a need for accommodating more functionality as required. RDFa does this by using namespaces to allow an infinite variety of formats. These namespaces however introduced an extra complexity layer. Another negative is also that this tends to diverge implementations instead of converging them. </li>
+			<li>The <mark>mark</mark> element's purpose is to highlight text while not attaching any importance to it e.g in search</li>
+			<li>The time element is for representing times, dates or a combination. Specify the datetime attribute inside the tag or expose it to the user.</li>
 
-			<h3>Structure</h3>
+			<li>Structure</li>
 			<ul>
 				<li>The section element is used to group thematically related content.</li>
 				<li>The header is for introductory or navigational content and there can be multiple in a pager.</li>
@@ -68,24 +76,23 @@
 				<li>The article tag is for self-contained related content. It is very useful for syndication</li>
 
 			</ul>
+			</ul>
 			<p>These elements eliminate the overuse of div elements by adding some meaning to the sections.</p>
 
 			<h3>Content Models</h3>
-			<p>The new sectioning elements enable one to clearly demarcate the page in sensible segments. One also need not keep track of the <h> elements to know where exactly they are. Section element takes care of this.</p>
-			<p>In a hgroup element only the first heading will contribute to the outline. The blockquote , fieldset , and td elements are all immune to the outline algorithm.</p>
-			<p>Scoped attribute makes it possible to only apply behaviour to containing sectioning elements. </p>
-
-
+			<ul>
+			<li>The new sectioning elements enable one to clearly demarcate the page in sensible segments. One also need not keep track of the heading elements to know where exactly they are. Section element takes care of this.</li>
+			<li>In a hgroup element only the first heading will contribute to the outline. The blockquote , fieldset , and td elements are all immune to the outline algorithm.</li>
+			<li>Scoped attribute makes it possible to only apply behaviour to containing sectioning elements. </li>
+			</ul>
 
 		</article>
 
-		<section>
+		<article>
 			<h2>Using HTML5 Today</h2>
 			<p>Modernizr is a useful tool for detecting browser support for html attributes. </p>
 		</article>
-
-
-
+	</section>
 		<footer><small>Compiled by Joseph Musembi</small></footer>
 	</body>
 </html>
