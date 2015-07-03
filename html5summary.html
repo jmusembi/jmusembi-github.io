@@ -8,18 +8,33 @@
 		<header><h1>HTML5 For Web Designers</h1></header>
 		<section>
 			<h2>A brief history of Markup</h2>
-
-
+			<p>The first release of HTML was HTML2.0. After HTML 4.01 came XHTML 1 which was characterized by strict markup rules. XHTML 2 was released and was not going to be backward compatible and thus failed miserabley. There was a rebellion within W3C from those who felt that languages that were being formulated were theoretically pure but were unrelated to the needs of web designers. A proposal to enable HTML to support web application development was rejected and the rebels formed Web Hypertext Application Technology Working Group. They worked on Web Forms 2.0 and Web Apps 1.0. aiming to extend HTML. XHTML is dead but its syntax lives on. HTML5 has not been officially released but we can still use its features provided they are supported by the browsers. </p>
 		</section>
 
 		<section>
 			<h2>The Design of HTML5</h2>
+			<p>HTML5 is built on the following Design principles:</p>
+			<ul>
+				<li>Support already existing content.</li>
+				<li>Do not reinvent the wheel</li>
+				<li>In case of conflict, consider users over authors over implementers over specifiers over theoretical purity.</li>
 
+			</ul>
+			<p>
+				HTML5 defines what browsers should do incase they encounter errors. This feature is not of particular interests to web designers if they are writing correct mark up.
+			<p>
+			<p>The DOCTYPE declaration in HTML5 is not required. This makes sense because browsers support features not versions.</p>
+			<p>The new syntax is very lean and unnecessary attributes in tags such as the type="text/css" are excluded.</p>
+			<p>There is no deprecation of elements. Rather elements are simply obsolete. The frame, frameset, and noframes are some of the deprecated elements.</p>
+			<p>The javascript APIs that browsers have been using independently will be documented by HTML5</p>
 
 		</section>
 
 		<section>
 			<h2>Rich Media</h2>
+			<p>HTML is making it possible to take advantage of media on the media without depending on external  technoligies.</p>
+			<p>Canvas makes content change according to user actions and this is serves to replace technologies such as Flash. It can be used to update rather than create content to make it unobtrusive.</p>
+			<p>Audio can now be inserted directly into pages with audio tag. Boolean attributes are either present or not and do not take values. Adding controls is done by simply adding the controls boolean attribute. Using the preload attribute(set to none, auto or metadata) one can specify whether to buffer the audio. There has been the problem of format support among browsers. This can be solved by providing different formats for the browsers to choose from.</p>
 
 
 		</section>
@@ -44,6 +59,6 @@
 
 
 
-
+		<footer><small>Compiled by Joseph Musembi</small></footer>
 	</body>
 </html>
