@@ -1,2 +1,14 @@
-table {border-collapse: collapse;}
-td {border: 3px dotted black; padding: 3px;}
+.my-table{
+	border-collapse: collapse;
+	display: table;
+	background-color: gray;
+}
+
+td {
+	border: 3px solid;
+	padding: 3px;
+}
+
+tfoot{
+	display: table-footer-group
+}

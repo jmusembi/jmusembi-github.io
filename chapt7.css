@@ -1,13 +1,13 @@
 ul{
 	border: solid;
-	border-bottom: -15px;
+	border-bottom: 15px;
 }
 li{
 	border-bottom: 20px;
 	list-style-position: inside;
 }
 h1{
-	border-bottom: -18px;
+	border-bottom: 18px;
 	border: solid;
 }
 p{
