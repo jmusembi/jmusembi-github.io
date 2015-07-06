@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS Definitive Guide</title>
+		<link rel="stylesheet" href="chapt13.css" media="screen, print, projection"></link> 
+	</head>	
+	<body>
+		<article>
+			<h1>Customization</h1>
+		<p>Such customization increases the odds that the user will be able to read the docu-
+ment, since he has presumably configured his operating system to be usable. (If not,
+he deserves whatever he gets)
+There are 28 system color keywords in total, although CSS does not explicitly define
+them. Instead, there are some generic (and very short) descriptions of each keywords meaning.
+ The following list describes all 28 keywords. In cases where there is
+a direct analog with the options in the Appearance tab of the Display control panel
+in Windows 2000, it is noted parenthetically after the description.
+</p>
+
+<h1>Margins</h1>
+<p>
+Because CSS2 allows for some odd page-breaking styles, it defines a set of behaviors
+regarding allowed page breaks and “best” page breaks. These behaviors guide user
+agents in how they should handle page breaking in various circumstances.
+There are really only two generic places where page breaks are permitted. The first of
+these is between two block-level boxes. If a page break falls between two block
+boxes, then the margin-bottom value of the element before the page break is reset to
+0 , as is the margin-top of the element following the page break. However, there are
+two rules that allow a page break to fall between two element boxes:
+• If the value of page-break-after for the first element—or the value of page-break-
+before for the second element—is always , left , or right . This is true regardless of
+the value for theother element, even if it’s avoid . (This is a forced page break.)
+• If the value of the first element’s page-break-after value is auto , and the same is
+true for the second element’s page-break-before value, and if they do not share
+an ancestor element whose page-break-inside value is not avoid .
+</p>
+
+<h1>Paragraph</h1>
+<p>
+This means that any paragraph can have no fewer than four line boxes appear at the
+top of a page. If the layout of the document would lead to fewer line boxes, then the
+entire paragraph is placed at the top of the page. Consider the situation shown in
+Figure 14-6. Cover up the top part of the figure with your hand, so only the second
+page is visible. Notice that there are two line boxes there, from the end of a para-
+graph that started on the previous page. Given the default widows value of 2 , this is an
+acceptable rendering. However, if the value were 3 or higher, the entire paragraph
+would appear at the top of the second page as a single block. This would require that
+a page break be inserted before the paragraph in question.
+Look again at Figure 14-6, but this time cover up the second page with your hand.
+Notice the four line boxes at the bottom of the page, at the beginning of the last
+paragraph. This is fine as long as the value of orphans is 4 or less. If it were 5 or
+higher, the paragraph would again be prece.
+</p>
+
+<h1>Going further</h1>
+<p>
+Now, suppose further that you have a situation where an h4 is placed between two
+images, and its height calculates to half an inch. Each image will have to be printed
+on a separate page, but there are only two places the h4 can go: at the bottom of the
+page holding the first element, or on the page after it. If it’s placed after the first
+image, then it must be followed by a page break, since there’s no room for the sec-
+ond image to follow it, as shown in Figure 14-5.
+On the other hand, if the h4 is placed on a new page following the first image, there
+won’t be room on that same page for the second image. So, again, there will be a
+page break after the h4 . And, in either case, at least one image, if not both, will be
+preceded by a page break. There’s only so much the user agent can do, given a situa-
+tion like this one.
+Obviously, situations such as these are rare, but they can happen—for example, in a
+case where a document contains nothing but tables preceded by headings. There
+may be cases where tables print in such a way that they force a heading element to be.
+</p>
+
+<h1>System colors</h1>
+<p>
+Such customization increases the odds that the user will be able to read the docu-
+ment, since he has presumably configured his operating system to be usable. (If not,
+he deserves whatever he gets)
+There are 28 system color keywords in total, although CSS does not explicitly define
+them. Instead, there are some generic (and very short) descriptions of each keywords meaning. The following list describes all 28 keywords. In cases where there is
+a direct analog with the options in the Appearance tab of the Display control panel
+in Windows 2000, it is noted parenthetically after the description.
+</p>
+
+<h1>Page breaking</h1>
+<p>
+Because CSS2 allows for some odd page-breaking styles, it defines a set of behaviors
+regarding allowed page breaks and “best” page breaks. These behaviors guide user
+agents in how they should handle page breaking in various circumstances.
+There are really only two generic places where page breaks are permitted. The first of
+these is between two. If a page break falls between two block
+these is between two <span class="acro">BLE</span>. If a page break falls between two block
+boxes, then the margin-bottom value of the element before the page break is reset to
+0 , as is the margin-top of the element following the page break. However, there are
+two rules that allow a page break to fall between two element boxes:
+• If the value of page-break-after for the first element—or the value of page-break-
+before for the second element—is always , left , or right . This is true regardless of
+the value for theother element, even if it’s avoid . (This is a forced page break.)
+• If the value of the first element’s page-break-after value is auto , and the same is
+true for the second element’s page-break-before value, and if they do not share
+an ancestor element whose page-break-inside value is not avoid .
+</p>
+
+<h1>Visibility</h1>
+<p>
+This means that any paragraph can have no fewer than four line boxes appear at the
+top of a page. If the layout of the document would lead to fewer line boxes, then the
+entire paragraph is placed at the top of the page. Consider the situation shown in
+Figure 14-6. Cover up the top part of the figure with your hand, so only the second
+page is visible. Notice that there are two line boxes there, from the end of a para-
+graph that started on the previous page. Given the default widows value of 2 , this is an
+acceptable rendering. However, if the value were 3 or higher, the entire paragraph
+would appear at the top of the second page as a single block. This would require that
+a page break be inserted before the paragraph in question.
+Look again at Figure 14-6, but this time cover up the second page with your hand.
+Notice the four line boxes at the bottom of the page, at the beginning of the last
+paragraph. This is fine as long as the value of orphans is 4 or less. If it were 5 or
+higher, the paragraph would again be prece.
+</p>
+
+<h1 class="acro">CSS</h1>
+<p>
+Now, suppose further that you have a situation where an h4 is placed between two
+images, and its height calculates to half an inch. Each image will have to be printed
+on a separate page, but there are only two places the h4 can go: at the bottom of the
+page holding the first element, or on the page after it. If it’s placed after the first
+image, then it must be followed by a page break, since there’s no room for the sec-
+ond image to follow it, as shown in Figure 14-5.
+On the other hand, if the h4 is placed on a new page following the first image, there
+won’t be room on that same page for the second image. So, again, there will be a
+page break after the h4 . And, in either case, at least one image, if not both, will be
+preceded by a page break. There’s only so much the user agent can do, given a situa-
+tion like this one.
+Obviously, situations such as these are rare, but they can happen—for example, in a
+case where a document contains nothing but tables preceded by headings. There
+may be cases where tables print in such a way that they force a heading element to be</p>
+		</article>
+	</body>
+</html>

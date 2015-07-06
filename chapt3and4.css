@@ -1,0 +1,24 @@
+body{font-weight: bold; background: green;}
+
+.green-paragraph{font-weight: normal; background: green;}
+.blue-paragraph{font-weight: bold; background: blue;}
+.red-section{font-weight: bold; background: red;}
+.red-section{font-weight: bold; background: purple;}
+
+
+a:link {color: blue;}
+a:visited {color: purple;}
+a:link:hover {color: red;}
+a:visited:hover {color: gray;}
+a:link:active {color: orange;}
+a:visited:active {color: silver;}
+
+
+section{
+	color: #ff7800;
+}
+
+.contact{
+	font-size: 72px;
+	color: inherit
+}

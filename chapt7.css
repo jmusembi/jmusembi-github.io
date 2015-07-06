@@ -1,0 +1,32 @@
+ul{
+	border: solid;
+	border-bottom: -15px;
+}
+li{
+	border-bottom: 20px;
+	list-style-position: inside;
+}
+h1{
+	border-bottom: -18px;
+	border: solid;
+}
+p{
+	line-height: 1em;
+	font-size: 14px;
+}
+
+span{
+	font-size:150%;
+	font-weight: bold;
+}
+
+h3{
+	display: run-in;
+	border: 1px dotted; 
+	font-size: 125%;
+    font-weight: bold;
+}
+
+.runin{
+	border-top: 1px solid black; padding-top: 0.5em;
+}

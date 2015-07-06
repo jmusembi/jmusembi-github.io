@@ -1,0 +1,22 @@
+ul{
+	border-style: groove outset dashed dotted;
+	border-width: thick;
+	border-color: orange;
+	margin: 0.5em 0;
+	padding-top: 10%;
+}
+
+body{
+	background-color: #000;
+	background-image: url("cover.jpg");
+	color: white;
+	white-space: pre-wrap;
+	background-repeat: no-repeat;
+	background-position: 290% 100%;
+	padding: 0px;
+	background-attachment: scroll;
+
+
+
+}
+strong {padding-top: 1.5em; background-color: silver;}

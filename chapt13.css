@@ -1,0 +1,44 @@
+p{
+	background-color: Background;
+	color: ButtonHighlight;
+	white-space: pre-wrap;
+}
+
+html{
+	cursor: crosshair;
+	speak: normal;
+	speak-punctuation: code;
+	speak-numeral: continuous;
+	speech-rate: fast;
+	volume: soft;
+}
+
+.acro{
+	speak: spell-out;
+}
+
+body{
+	outline: dashed;
+	outline-color: #0083ca;
+}
+
+h1 {
+	position: relative;
+ 	top: 0; 
+ 	right: 0; 
+ 	font-size: 180%;
+ 	pause-after: 2s;
+ 	pause-before: 2s;
+ 	page-break-before: always;
+ }
+
+ h1:first-letter {font-size: 166%;}
+
+@media print{
+	body {font-family: serif; font-size: 14pt; background-color: white; color: #000;}
+	@page {size: landscape; margin: 0.5in;}
+	p {page-break-inside: avoid; widows: 5; orphans: 5}
+	h1 {position: relative; top: 0; right: 0; font-size: 180%;}
+
+}
+

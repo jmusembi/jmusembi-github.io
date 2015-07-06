@@ -1,0 +1,11 @@
+ul{
+	border-style: groove outset dashed dotted;
+	border-width: thick;
+	border-color: orange;
+	margin: 0.5em 0;
+	/*padding-top: 10%;*/
+}
+
+p{
+
+}
