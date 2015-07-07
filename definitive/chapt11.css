@@ -1,0 +1,41 @@
+table{
+	display: table;
+	/*background-color: gray;*/
+	border-collapse: collapse;
+	table-layout: auto;
+
+}
+
+td, th{
+	width: 4rem;
+	height: 2rem;
+	border: 1px solid;
+	text-align: center;
+}
+
+tfoot{
+	display: table-footer-group;
+
+}
+
+tr:nth-child(odd){
+	background-color: orange;
+
+
+}
+
+#tr2{
+	border-height: 640px;
+	border-style: dotted;
+	border-color: black;
+}
+
+td:hover{
+	background-color: lime;
+}
+
+th{
+	
+	background-color: lightblue;
+
+}

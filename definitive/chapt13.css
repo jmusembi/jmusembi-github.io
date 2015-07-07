@@ -4,16 +4,6 @@ p{
 	white-space: pre-wrap;
 }
 
-html{
-	cursor: crosshair;
-	speak: normal;
-	speak-punctuation: code;
-	speak-numeral: continuous;
-	speech-rate: fast;
-	volume: soft;
-}
-
-
 body{
 	outline: dashed;
 	outline-color: #0083ca;
