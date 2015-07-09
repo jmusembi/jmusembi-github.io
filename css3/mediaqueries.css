@@ -1,0 +1,13 @@
+body{
+	color: white;
+	background-color: #000;
+}
+
+
+@media (min-width: 640px){
+	body{
+		background-image: url("wall.jpg");
+	}
+}
+
+@media ()

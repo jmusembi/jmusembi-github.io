@@ -1,0 +1,21 @@
+@font-face{
+	font-family: 'Rale';
+	src: url("raleway.woff") format("woff");
+
+
+}
+
+
+#paragraph{
+	font-family: Rale, sans-serrif;
+	color: #000;
+	font-weight: bolder;
+	letter-spacing: 0.1em;
+	line-height:1em;
+	font-feature-settings: "dlig" on;
+
+}
+
+
+
+

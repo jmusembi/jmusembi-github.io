@@ -1,0 +1,12 @@
+.col{
+	-webkit-column-count: 5;
+	width: 100%px;
+	-webkit-column-width: 220px;
+	-webkit-column-gap: 20px;
+	-webkit-column-fill: balance;
+	-webkit-column-rule-style: double;
+}
+
+h1{
+	-webkit-column-span: all;
+}

@@ -1,0 +1,14 @@
+h1{
+	text-shadow: -1.5px -1.5px 2px #0083ca;
+	color: #DBF;
+}
+
+p{
+	border-style: solid;	
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: break-word;
+	hyphens: manual;
+	resize: both;
+}

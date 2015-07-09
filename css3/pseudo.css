@@ -1,0 +1,38 @@
+ol{
+	position: absolute;
+	width: ;
+}
+
+li:only-of-type{
+	background-color: lime;
+
+}
+
+li:empty{
+	background-color: green !important;
+}
+
+li:not(:first-child){
+	background-color: lime;
+}
+
+#my_id{
+	background-color: #fff;
+
+}
+
+#my_id:target{
+	background-color: #000;
+}
+
+li:first-of-type:{
+	font-weight: bolder;
+}
+
+li:last-of-type{
+	font-weight: bolder;
+}
+
+p:first-line{
+	font-size: bold;
+}

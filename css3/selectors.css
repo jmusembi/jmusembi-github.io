@@ -1,0 +1,21 @@
+a[href]{
+	color: #000;
+	font-size: 3em;
+	text-decoration: none;	
+}
+
+
+
+li > a[href^="book"]{
+	color: #4c66a4;
+}
+
+li a[href][href*="dwida"]{
+	color: #4099FF;
+
+}
+
+
+li > a[href*="hinsta"][href$=".com"]{
+	color: #3F729B;	
+}

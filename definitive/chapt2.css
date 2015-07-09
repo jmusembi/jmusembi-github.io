@@ -1,6 +1,6 @@
 @import url("chapt1.css") screen;/*Import from chapter one*/
 
-p[class="first-paragraph"]{background: green;}
+p[class="first-paragraph"]{background: teal;}
 #first-character{font-weight: bold;}
 p + p{font-weight: bold;}
 a:hover {color: red;}
