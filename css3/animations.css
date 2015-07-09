@@ -1,0 +1,27 @@
+button{
+	width: 200px;
+	height: 50px;
+	background-color: #00bf8f;
+}
+
+.box-1{
+	width:200px;
+	height:100px;
+	background-color: #00bf8f;
+	float: left;
+	transition-property: background-color;
+	transition-duration: 2s;
+}
+
+box-1:hover:{
+	background-color: #0Fbf8f;
+}
+
+.box-2{
+	width:200px;
+	height:100px;
+	background-color: #00bf8f;
+	float: left;
+}
+
+

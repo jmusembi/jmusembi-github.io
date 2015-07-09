@@ -6,8 +6,9 @@
 	color: #FFF;
 	margin-top: 250px;
 	margin-left: 300px;
-	transform: rotate(20px,20px);
-	transform: scale(-2, 1);
+	transform: rotateX(-40px);
+	transform: rotateY(-40px);
+	transform: rotateZ(40px);
 }
 
 .child{
@@ -16,7 +17,4 @@
 	color: #000;
 	border-style: solid;
 	background-color: #fff;
-	transform-origin: 200px 50px;
-	transform: rotate(-5deg);
-
 }
