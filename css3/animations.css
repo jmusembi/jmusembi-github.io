@@ -1,27 +1,64 @@
-button{
-	width: 200px;
-	height: 50px;
-	background-color: #00bf8f;
+.container{
+	width: 700px;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: #000;
 }
 
-.box-1{
-	width:200px;
-	height:100px;
-	background-color: #00bf8f;
-	float: left;
-	-webkit-transition-property: background-color;
-	-webkit-transition-duration: 2s;
-}
-
-button:active{
-	background-color: #0Fbf8f;
-}
-
-.box-2{
-	width:200px;
-	height:100px;
+.bar-1{
+	width: 500px;
+	height:30px;
 	background-color: #00bf8f;
 	float: left;
+	transition: height 0.4s ease-out;
+}
+.bar-1:hover{
+	height: 100px;
 }
 
+.bar-2{
+	width: 500px;
+	height:30px;
+	background-color: #ff6600;
+	float: left;
+	transition: height 0.4s ease-in;
+}
 
+.bar-2:hover{
+	height: 100px;
+}
+
+.bar-3{
+	width: 500px;
+	height:30px;
+	background-color: lime;
+	float: left;
+	transition: height 0.4s ease-out;
+}
+
+.bar-3:hover{
+	height: 100px;
+
+}
+
+@keyframes chameleon{
+	0% { background-color:  #00bf8f;}
+	50% { background-color:  #ff6600;}
+	100%{ background-color:  lime;}
+}
+
+.box{
+	width: 500px;
+	height:30px;
+	background-color: lime;
+	animation-name: chameleon;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+	}
+
+}
