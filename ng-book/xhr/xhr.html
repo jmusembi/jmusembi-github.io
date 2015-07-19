@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+    <script src="xhr.js"></script>
+    <link rel="stylesheet" href="xhr.css">
+  </head>
+	  <body ng-app="xhrApp">
+	  	<div ng-controller="xhrController">
+	  		<h1>Student names</h1>
+	  		<div ng-repeat="stud in students">
+	  		<ul>
+	  			<li>{{stud.lastName}}</li>
+	  		</ul>
+	  		</div>
+
+	  	</div>
+	  	
+
+	  </body>
+</html>

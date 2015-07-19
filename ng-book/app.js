@@ -8,7 +8,6 @@ angular.module('myApp', [])
             var template = $interpolate(card);
             $scope.patientCard = template({firstName: $scope.firstName}, {lastName: $scope.lastName});
           }
-        });
-				
+        });				
 	
 		});
