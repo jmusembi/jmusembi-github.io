@@ -1,0 +1,22 @@
+{
+  "name": "ng-book",
+  "version": "0.0.0",
+  "description": "Ng-book demos",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "angular": "~1.4.2",
+    "jasmine": "~2.3.1",
+    "grunt": "~0.4.5",
+    "jasmine-core": "~2.3.4",
+    "karma-jasmine": "~0.3.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause"
+}
