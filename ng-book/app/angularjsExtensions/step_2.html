@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+    <script src="extensions.js"></script>
+  </head>
+    <body ng-app="wizardApp">
+       <div ng-controller="WizardSignupController">
+        <h2>Step 2</h2>
+        <div ui-view>
+          <form>
+            <input type="text" placeholder="email">
+            <input type="number" placeholder="Phone Number">
+            <button ng-click="go3()"> Step 3</button>
+
+          </form>
+        </div>
+       </div>
+
+    </body>
+</html>

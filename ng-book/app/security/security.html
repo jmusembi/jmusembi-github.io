@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="security.js"></script>
+  </head>
+    <body ng-controller="MyController">  
+    <h2>HTML Editor</h2>
+    <hr>
+    <h3>Enter HTML code here</h3>   
+    <textarea ng-model="email.rawHtml"></textarea>
+    <h3>Output</h3>
+    <pre ng-bind-html="email.htmlBody"></pre>
+    </body>
+</html>

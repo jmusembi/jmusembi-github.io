@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+  <head>
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="routing.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+    
+  </head>
+
+  <body>
+  	<h1>Advanced</h1>
+	<h2>Other Advanced Routing Topics</h2>
+	Page Reloading
+	The $location service does not reload the entire page; it simply changes the URL. If we need to
+	cause a full page reload, we have to set the location using the $window service:
+	1
+	$window.location.href = "/reload/page";
+
+	<h2>Async Location Changes</h2>
+	If we need to use the $location service outside of the scope life cycle, we have to use the $apply
+	function to propagate the changes throughout the app. That’s because the $location service uses
+	the $digest phase as the impetus to start the browser route change, which is how routing events
+	work.
+
+  </body>
+
+</html>

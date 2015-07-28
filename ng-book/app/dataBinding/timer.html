@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular.js"></script>
+  </head>
+
+  <body>
+    <div ng-controller="MyController">
+    <!-- <input ng-model="name" type="text" placeholder="Your name"> -->
+    <h1>Hello {{clock}}</h1>
+    </div>
+
+    <script type="text/javascript">
+    	angular.module('myApp', [])
+			.controller('MyController', function($scope, $timeout){
+				var updateClock = function() {
+					$scope.clock = new Date();
+					$timeout(function() {
+						updateClock();
+					}, 5);
+				};
+				updateClock();
+	
+		});
+
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="localApp">
+  <head>
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="../bower_components/angular-translate/angular-translate.js"></script>
+    <script src="localization.js"></script>
+  </head>
+    <body>
+      <h2>{{ 'HEADLINE' | translate }}</h2>
+      <p>{{ 'INTRO_TEXT' | translate }}</p>
+      <p>Now, every request that is made through $http to the URL /api/users.json will be stored in
+the default $http cache. The key for this request in the $http cache is the full-path URL.
+By passing the true parameter in the $http options, we’re telling the $http service to use the
+default cache. It’s useful to use the default cache if we don’t want to mess with the cache all that
+often.
+We can, however, manipulate the default $http cache if we need to (e.g., if another request we
+make without caching notifies us of a delta change, we can clear the request in the default $http
+request).
+To reference the $http default request, we simply fetch the cache through the $cacheFactory
+by ID:</p>
+    </body>
+</html>
