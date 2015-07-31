@@ -1,4 +1,4 @@
-app = angular.module('mobileApp', ['ngTouch', 'angular-gestures']);
+app = angular.module('mobileApp', ['ngTouch', 'hmTouchEvents']);
 
 app.controller("mobileController", function ($scope) {
     $scope.text = "Github";

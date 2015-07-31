@@ -1,17 +1,19 @@
 <!doctype html>
 <html ng-app="animationsApp">
 <head>
-  <link rel="stylesheet" href="http://cdn.jsdelivr.net/foundation/4.3.2/css/foundation.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular.js">
-  </script>
-  <script src="bower_components/ngAnimate-animate/animate.js"></script>
-  <script src="bower_components/ngAnimate-animate/example.animate.css"></script>
+  <script src="../node_modules/angular/angular.js"></script>
+  <script src="../node_modules/angular-animate/angular-animate.js"></script>
   <script src="animations.js"></script>
+  <link rel="stylesheet" type="text/css" href="anime.css">
+  <script type="text/javascript" src="animations.js"></script>
 </head>
-  <body>
-    <div class="dn-flip-x box">The flipbox</div>
-    <div class="dn-flip-y box">Another flipbox</div>
-    <div class="dn-flip-x box">And another one</div>
+  <body ng-controller="myCtrl">
+    <button ng-click="slideIn=!slideIn">Click</button>
+    <div ng-class="{content: slideIn}">The flipbox</div>
+
+    <div class="test">Another flipbox</div>
+
+    <div class="box">And another one</div>
 
   </body>
 </html>

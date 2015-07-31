@@ -2,4 +2,67 @@
     width: 400px;
     height: 400px;
     background-color: green;
+    
+}
+
+@keyframes slideIn {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+
+    }
+}
+
+.content {
+    animation: slideIn 5s;
+}
+
+button {
+    width: 200px;
+    height: 100px;
+}
+.test {
+    font-size: 24px;
+}
+.test .ng-enter {
+    opacity: 0.5;
+    color: red;
+    tr
+
+}
+
+.test .ng-enter .ng-enter-active {
+    opacity: 1;
+    color: green;
+}
+
+
+
+//
+.toggle {
+    -webkit-transition: linear 1s;
+    -moz-transition: linear 1s;
+    -ms-transition: linear 1s;
+    -o-transition: linear 1s;
+    transition: linear 1s;
+}
+
+.toggle.ng-enter {
+    opacity: 0;
+}
+
+.toggle.ng-enter-active {
+    opacity: 1;
+}
+
+.toggle.ng-leave {
+    opacity: 1;
+}
+
+.toggle.ng-leave-active {
+    opacity: 0;
 }
